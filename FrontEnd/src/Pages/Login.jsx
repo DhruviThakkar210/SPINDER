@@ -29,7 +29,7 @@ export default function Login(){
                 </div>
             </div>
             <div className="w-1/2 h-screen relative"> {/* RIGHT Side*/}
-                <img src={bgPhoto} alt="" className="absolute top-0 left-0 w-full h-full w-[670px] pb-[2rem] rounded-md" />
+                <img src={bgPhoto} alt="" className="absolute top-0 left-0 h-full w-[670px] pb-[2rem] rounded-md" />
             </div>
         </div>
         </div>
