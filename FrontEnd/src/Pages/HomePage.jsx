@@ -3,10 +3,6 @@ import bgPhoto from '../Assets/images/main pageAsset 2-8 1.png'
 import { BsSpotify } from 'react-icons/bs';
 import { Link } from "react-router-dom"
 
-const client_id = "e2df6d5c04ba4d00b805b7403407979c"
-const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state`
-
-
 
 export default function Home(){
     return (
@@ -28,7 +24,7 @@ export default function Home(){
                         </button>
                     </Link>
                     <Link to="/signup">
-                        <button href={AUTH_URL} className="bg-[#D93EBE] text-white px-4 py-2 rounded-full cursor-pointer">
+                        <button className="bg-[#D93EBE] text-white px-4 py-2 rounded-full cursor-pointer">
                             Sign Up
                         </button>
                     </Link>

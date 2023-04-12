@@ -6,6 +6,7 @@ import bgPhoto from "../Assets/images/Login SignUp PageAssest.png"
 
 export default function Signup(){
     return (
+        <div className="bg-gray-300">
         <div className="w-full min-h-screen my-4 mx-8 flex relative">
            <div className="w-1/2 h-full">   {/* LEFT Side*/}
                 <div>
@@ -30,6 +31,7 @@ export default function Signup(){
             <div className="w-1/2 h-screen relative"> {/* RIGHT Side*/}
                 <img src={bgPhoto} alt="" className="absolute top-0 left-0 h-full w-[670px] pb-[2rem] rounded-md" />
             </div>
+        </div>
         </div>
     )
 }
