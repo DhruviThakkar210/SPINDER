@@ -1,3 +1,7 @@
-.home-page{
-    background-size: cover;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    overflow: hidden;
 }
