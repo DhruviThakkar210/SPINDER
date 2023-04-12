@@ -1,26 +1,24 @@
-import React from 'react'
-import { Login } from './Pages/Login'
-import { 
-    RouterProvider,
-    createBrowserRouter,
-    createRoutesFromChildren,
-    Link,
-    createRoutesFromElements,
-    Route
-} from 'react-router-dom'
+import React from "react"
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route
+} from "react-router-dom"
+import Home from "./Pages/HomePage"
+import Login from "./Pages/Login"
+import Signup from "./Pages/Signup"
+import "./index.css"
 
 const router = createBrowserRouter(createRoutesFromElements(
-    <Route path="/">
-        <Route index element={<Login/>}/>
-        <Route to=""/>
-
-    </Route>
+  <Route path="/">
+    <Route path="/" element={<Home />} />
+    <Route path="/login" element={<Login />} />
+    <Route path="/signup" element={<Signup/>} />
+  </Route>
 ))
-
-export default function App() {
+export default function App(){
   return (
-    <div>
-        <Login />
-    </div>
+      <RouterProvider router={router}/>
   )
 }
