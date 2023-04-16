@@ -26,8 +26,8 @@ export default function Login(){
 
 
     return (
-        <div className="bg-gray-300">
-        <div className="w-full min-h-screen my-4 mx-8 flex relative ">
+        <div className="bg-gray-300 overflow-hidden">
+        <div className="w-screen min-h-screen my-4 mx-8 flex relative ">
            <div className="w-1/2 h-full">   {/* LEFT Side*/}
                 <div>
                     <Link to="/">
