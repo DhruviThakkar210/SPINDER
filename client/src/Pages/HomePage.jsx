@@ -5,7 +5,7 @@ import bgPhoto from '../Assets/images/main pageAsset 2-8 1.png'
 import { BsSpotify } from 'react-icons/bs';
 import { Link } from "react-router-dom"
 // import MyMusic from "../Assets/m.usic/真夜_-のドア〜stay-with-me-night-tempo-showa-groove-mix-svfromnet.com.mp3"
-import MyMusic from "../Assets/m.usic/fly-day-chinatown-mewna-remix-svfromnet.com (1).mp3"
+// import MyMusic from "../Assets/m.usic/fly-day-chinatown-mewna-remix-svfromnet.com (1).mp3"
 // import MyMusic from "../Assets/m.usic/フライディ・チャイナタウン-泰葉-official-lyric-video-svfromnet.com.mp3"
 
 
