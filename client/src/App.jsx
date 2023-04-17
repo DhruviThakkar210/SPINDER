@@ -46,7 +46,6 @@ export default function App(){
       <RouterProvider router={router} />
     ) : (
       <>
-        <pre>LINKED SUCCESSFULLY..... Now you are HACKED And I have All Your Private DATA</pre>
         <LandingPage/>
       </>
       
