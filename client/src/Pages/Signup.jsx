@@ -8,7 +8,7 @@ import { loginEndpointURL } from "../Components/SpotifyAuth";
 export default function Signup() {
     return (
         <div className="bg-gray-300">
-            <div className="p-4 sm:p-0 justify-center items-center sm:justify-normal sm:items-start sm:px-8 flex flex-col sm:flex-row">
+            <div className="p-4 h-screen items-center sm:justify-normal sm:items-start sm:py-0 sm:pl-8 sm:pr-4 flex flex-col sm:flex-row">
                 <div className="w-full sm:w-1/2 sm:mt-4">   {/* LEFT Side*/}
                     <div>
                         <Link to="/">
@@ -32,9 +32,9 @@ export default function Signup() {
                     </div>
                 </div>
                 <div className="w-1/2 h-screen relative hidden sm:inline-flex overflow-hidden"> {/* RIGHT Side desktop*/}
-                    <img src={bgPhoto} alt="" className="absolute top-4 left-0 h-[95%] w-[670px] rounded-md" />
+                    <img src={bgPhoto} alt="" className="absolute w-full top-4 left-0 h-[95%] rounded-md" />
                 </div>
-                <div className="sm:hidden max-w-1/2 w-full pb-[2rem]"> {/* RIGHT Side mobile*/}
+                <div className="sm:hidden w-[40%] pb-[2rem]"> {/* RIGHT Side mobile*/}
                     <img src={bgPhoto} alt="" className="rounded-md" />
                 </div>
             </div>

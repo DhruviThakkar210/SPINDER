@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <nav className="flex justify-between items-center py-4 px-2 sm:px-8 bg-[#342B4A]">
             <Link to="/">
-                <div className="flex items-center gap-2 text-xl sm:gap-4 bg-[#342B4A] cursor-pointer">
+                <div className="flex items-center gap-2 text-2xl sm:text-3xl sm:gap-4 bg-[#342B4A] cursor-pointer">
                     <img src={logoIcon} alt="" className="w-10 sm:w-auto bg-transparent" />
                     <span className="font-bold text-white bg-transparent">SPINDER</span>
                 </div>
