@@ -36,7 +36,7 @@ export default function LandingPage() {
   return (
     <div className="bg-[#1CDF63] p-4 text-2xl font-[500] leading-10 h-full w-full flex flex-col items-center justify-center">
         <pre className='text-sm'>I Finally Did It Giezz😭😭😭</pre>
-        <div className="flex flex-col items-center justify-center mb-10">
+        <div className="flex flex-col items-center justify-center my-10">
             <img
             src={userProfile.profileImage}
             alt={userProfile.name}
