@@ -1,47 +1,43 @@
 //TODO - Add Responsiveness
-
-import logoIcon from "../Assets/images/logoAsset 1-8 1.png"
-import bgPhoto from '../Assets/images/main pageAsset 2-8 1.png'
-import { BsSpotify } from 'react-icons/bs';
-import { Link } from "react-router-dom"
+import bgPhoto from '../Assets/images/match.png'
+import heart from '../Assets/images/love.svg'
+import small_heart from '../Assets/images/small_heart.svg'
+import Navbar from "../Components/Navbar";
 // import MyMusic from "../Assets/m.usic/真夜_-のドア〜stay-with-me-night-tempo-showa-groove-mix-svfromnet.com.mp3"
 // import MyMusic from "../Assets/m.usic/fly-day-chinatown-mewna-remix-svfromnet.com (1).mp3"
 // import MyMusic from "../Assets/m.usic/フライディ・チャイナタウン-泰葉-official-lyric-video-svfromnet.com.mp3"
 
 
 
-export default function Home(){
+export default function Home() {
     return (
         //todo curson pointer
         //todo login signup ke icons
-        <div className="w-full min-h-screen bg-[#342B4A] ">
-            <nav className="flex justify-between items-center py-4 px-8 bg-[#342B4A]">
-                <Link to="/">
-                    <div className="flex items-center bg-[#342B4A] cursor-pointer">
-                        <img src={logoIcon} alt="" className="w-auto mr-4 h-[60px] bg-transparent" />
-                        <span className="font-bold text-white text-[30px] bg-transparent">SPINDER</span>
-                    </div>                
-                </Link>
-                <div className="flex items-center font-bold text-[20px] ">
-                    <Link to="/login">
-                        <button className= "text-white px-7 py-2 bg-[#342B4A] cursor-pointer hover:scale-110 transition duration-300 ease-in">
-                            <BsSpotify className="inline-block mr-2" /> 
-                            Log in
-                        </button>
-                    </Link>
-                    <Link to="/signup">
-                        <button className="bg-[#D93EBE] text-white px-4 py-2 rounded-full cursor-pointer hover:scale-110 transition duration-300 ease-in">
-                            Sign Up
-                        </button>
-                    </Link>
+        <div className="min-h-screen h-screen bg-[#342B4A] ">
+            <Navbar />
+
+            <div className="w-full flex flex-col justify-center items-center gap-10 mt-10 sm:mt-3">
+                <div className="w-3/5 animate-pulse text-4xl sm:text-5xl font-[600] text-white text-center leading-tight  bg-transparent flex flex-col gap-1 sm:gap-2 relative">
+                    <span>Discover your perfect</span>
+                    <span>match based on the</span>
+                    <span>music you love</span>
+                    <div className='absolute -bottom-10 left-36 hidden 2xl:inline-flex'>
+                        <img src={heart} alt="" />
+                    </div>
+                    <div className='absolute bottom-5 left-28 hidden 2xl:inline-flex'>
+                        <img src={small_heart} alt="" />
+                    </div>
+                    <div className='absolute -bottom-10 right-36 hidden 2xl:inline-flex rotate-[65deg]'>
+                        <img src={heart} alt="" />
+                    </div>
+                    <div className='absolute bottom-5 right-28 hidden 2xl:inline-flex rotate-[65deg]'>
+                        <img src={small_heart} alt="" />
+                    </div>
                 </div>
-            </nav>
-          <div className="text-center py-20 bg-transparent animate-pulse">
-                <div className="text-[58px] font-[600] text-white text-center leading-tight w-full max-w-2xl absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-[150px] bg-transparent">
-                    Discover your perfect match based on the music you love
+                <div className="w-2/4 sm:w-1/4 absolute bottom-0 bg-transparent">
+                    <img src={bgPhoto} alt="" className="" />
                 </div>
             </div>
-            <img src={bgPhoto} alt="" className="absolute left-1/2 top-1/2 -translate-x-1/2 bottom-0 w-465 h-[400px] bg-transparent" />
         </div>
     )
 }
